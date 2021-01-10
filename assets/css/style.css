@@ -1,24 +1,36 @@
 @font-face {
-  font-family: Catamaran;
+  font-family: 'Catamaran';
   src: url(/assets/fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
 }
 
 @font-face {
-  font-family: Lato;
+  font-family: 'Lato';
   src: url(/assets/fonts/Lato/Lato-Regular.ttf);
 }
 
 @font-face {
-  font-family: Muli;
+  font-family: 'Muli';
   src: url(/assets/fonts/Mulish/Mulish-VariableFont_wght.ttf);
+}
+
+#bootstrap-overrides p {
+  font-family: "Muli", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 
 #bootstrap-overrides h1 {
   font-family: "Catamaran", Helvetica, Arial, sans-serif;
+  font-weight:100;
 }
 
-#bootstrap-overrides .text-success {
-  color: red;
+#bootstrap-overrides .nav-link {
+  font-family: "Catamaran", Helvetica, Arial, sans-serif;
+  color: rgb(0,0,0);
+}
+
+.navbar-toggler-icon {
+font-size: .7rem;
 }
 
 .site__title {
@@ -68,21 +80,26 @@ buttonAndFooterLinkTextYellow: #fdcc52;
     /* background-image: url(img_flwr.gif), url(paper.gif);
   background-position: right bottom, left top;
   background-repeat: no-repeat, repeat; */
-  height: 1540px;
+  min-height: 800px;
+  /* min-height: 1015px; */
+  max-height: 1140px;
 }
 
 .doubleMobilImg {
-    width: 432px;
-    height: 868px;
+    /* width: 432px; */
+    width: 360px;
+    /* height: 868px; */
+    height: 700px;
     background-image: url("/assets/img/demo-screen-1.jpg"), url("/assets/img/phone.png");
-    background-size: 90%, cover;
+    /* background-size: 90%, cover; */
+    background-size: 90%, contain;
     background-repeat: no-repeat, no-repeat;
     background-position: center, center ;
 }
 
 .downloadSection {
   background-color:rgb(253, 200, 68);
-  height: 480px;
+  min-height: 480px;
 }
 
 .card__icon {
@@ -98,6 +115,7 @@ buttonAndFooterLinkTextYellow: #fdcc52;
 .stopWaiting__button {
   width: 280px;
 }
+
 .weLoveSection {
   background-color:rgb(253, 200, 68);
   height: 240px;
@@ -124,4 +142,8 @@ buttonAndFooterLinkTextYellow: #fdcc52;
   padding: 22px;
   border-radius: 100%;
   background-color:rgb(29,161,243);
+}
+
+.stores {
+  width: 240px;
 }

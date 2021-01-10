@@ -39,54 +39,54 @@ Start Bootstrap szöveg (a bal felső sarokban):
     - Ha fölé visszük a kurzort, fehér lesz a betűszín. ok
 
 Felső navbar:
-    - Ha a menü item fölé visszük a kurzort, fehér lesz a betűszín. todo
+    - Ha a menü item fölé visszük a kurzort, fehér lesz a betűszín.
     - Nem új oldalra vezető linkek, hanem az adott oldalon belüli részhez animálódva le-/felgördül az oldal.
         - a "Download" > a "Discover what all the buzz is about!" részhez
         - a "Features" > az "Unlimited Features Unlimited Fun" részhez
         - a "Contact" > a "We love new friends!" részhez.
-    - Ez az gördülés animáció 300 ms időtartamú legyen,     todo
+    - Ez az gördülés animáció 300 ms időtartamú legyen, 
         - ennyi idő alatt  felülre az adott tartalmú rész.
 
 A felső menü fixen, mindig látható felül. 
-    - Ha nem az oldal tetején vagyunk, akkor legyen a menü háttérszíne fehér, a betűk szürkék. todo
+    - Ha nem az oldal tetején vagyunk, akkor legyen a menü háttérszíne fehér, a betűk szürkék. 
     (desktop-menu.pdf szerint)
 
 Gombok:
     - Lekerekítettek
-    - Ha föléjük visszük a kurzort, sárga lesz mind a háttér-, mind a borderszínük (#fdcc52)  todo
-    - Ez 300 ms alatt történjen meg, ne rögtön (natív css-sel oldd meg, ha tudod).  todo
+    - Ha föléjük visszük a kurzort, sárga lesz mind a háttér-, mind a borderszínük (#fdcc52) 
+    - Ez 300 ms alatt történjen meg, ne rögtön (natív css-sel oldd meg, ha tudod).
 
 Felső rózsaszín-lila rész:
-    - Ez egy linear gradient + egy kép -- repeat-elve. ok
-    - A kép a bg-pattern.png ok
+    - Ez egy linear gradient + egy kép -- repeat-elve.
+    - A kép a bg-pattern.png
 
 "Discover what all the buzz is about!" rész:
-    - Két kép lesz linkként használva (app-store-badge.svg, google-play-badge.svg)  ok
-    - Ezek olyan kép linkek, amelyek az app store és a google play oldalakra vezetnek   ok
+    - Két kép lesz linkként használva (app-store-badge.svg, google-play-badge.svg)
+    - Ezek olyan kép linkek, amelyek az app store és a google play oldalakra vezetnek
 
 "Unlimited Features Unlimited Fun" rész:
-    - A jobb oldali 4-es csoportnál embed row-t használj!   todo
-    - Az ikonok sima utf-8 karakterek, nem kell ikonkészletet használni. todo
+    - A jobb oldali 4-es csoportnál embed row-t használj!
+    - Az ikonok sima utf-8 karakterek, nem kell ikonkészletet használni.
 
-"Stop waiting Start Building" rész: todo
-    - A háttéren egy áttetsző „szűrő" van.  todo
-    - Ha a gomb fölé visszük a kurzort, sárga lesz a háttérszíne és a border színe is (#fdcc52) todo
+"Stop waiting Start Building" rész:
+    - A háttéren egy áttetsző „szűrő" van.
+    - Ha a gomb fölé visszük a kurzort, sárga lesz a háttérszíne és a border színe is (#fdcc52)
 
 "We love new friends!" rész:
     A szív:
-        - utf-8 karakter. ok
+        - utf-8 karakter.
     A Social ikonok:
-        - Fontawesome-ikonok    ok
-        - A háttérszínük 90%-os opacity-jű  todo
-        - Ha föléjük viszem a kurzort, akkor 100%-os opacity-jűek lesznek   todo
-        - Az ikonok linkek az adott social page-re  
-        - Mindegyik ikonnak legyen tooltippje, tehát ha valamelyik fölé viszem a kurzort,   todo
-          megjelenik az adott social page neve. (facebook, twitter, google plus)    todo
+        - Fontawesome-ikonok
+        - A háttérszínük 90%-os opacity-jű
+        - Ha föléjük viszem a kurzort, akkor 100%-os opacity-jűek lesznek
+        - Az ikonok linkek az adott social page-re
+        - Mindegyik ikonnak legyen tooltippje, tehát ha valamelyik fölé viszem a kurzort,
+          megjelenik az adott social page neve. (facebook, twitter, google plus)
 
 Footer
     Privacy, Terms, FAQ
-    - Sima linkek. Ha föléjük visszük a kurzort, sárga (#fdcc52) lesz a betűszínük  todo
-    - Nem új oldalra vezetnek, hanem mindegyik 1-1 külön modalt nyit.   todo
+    - Sima linkek. Ha föléjük visszük a kurzort, sárga (#fdcc52) lesz a betűszínük
+    - Nem új oldalra vezetnek, hanem mindegyik 1-1 külön modalt nyit.
       (Tehát 3 modal lesz:  a terms,  a privacy  és  a FAQ.)
     - Elég, ha ezeknek a modaloknak a title-je különbözik; a body lehet egyszerű lorem ipsum. 
     - A modal nyitását jqueryvel oldjuk meg. -->
@@ -151,13 +151,9 @@ Footer
                             will help you beautifully showcase<br>
                             your new mobile app, or anything else!
                         </h1>
-                        <div class="row">
-                            <!-- <div class="col-2 offset-lg-5 text-center text-white border border-white rounded-pill mt-5 px-5 py-3"
-                                style="width: 230px;"> -->
-                            <div
-                                class="col-4 offset-4 col-lg-6 offset-lg-0 text-center text-white border border-white rounded-pill mx-lg-3 mt-5 px-5 py-3">
-                                <small class="pt-4 pb-1">START NOW FOR FREE!</small>
-                            </div>
+                        <div class="text-center text-white border border-white rounded-pill mt-5 px-5 py-3"
+                            style="width: 230px;">
+                            <small class="pt-4 pb-1">START NOW FOR FREE!</small>
                         </div>
                         <!-- </header> -->
                     </div>
@@ -173,41 +169,20 @@ Footer
 
         <section id="download" class="downloadSection">
             <div class="jumbotron bg-transparent text-center">
-                <h1 class="display-3">Discover what all the<br>
+                <h1 class="display-4">Discover what all the<br>
                     buzz is about!</h1>
                 <p class="lead">Our app is available on any mobile device! Download to get started!</p>
-
-                <!-- <div class="stores mx-auto" style="width: 240px"> -->
-                <div class="container">
-                    <div class="row">
-                        <!-- <div class="col-3 mx-auto">
-                            <hr class="my-4">
-                        </div> -->
-                        <div class="col-4 offset-4 col-lg-3 offset-lg-3 pt-lg-3 px-1">
-                            <a href="https://play.google.com/store?utm_source=emea_Med&utm_medium=hasem&utm_content=090514&utm_campaign=Evergreen&pcampaignid=MKT-EG-emea-hu-all-Med-hasem-py-Evergreen-090514-1%7cONSEM_kwid_43700007034273641&gclid=CjwKCAiAxeX_BRASEiwAc1QdkcWJhnRn7ztoxu39G7zGfrXS_1ZSFYGUTvltTyBqOwT8pq7LjUDbvBoCn1sQAvD_BwE&gclsrc=aw.ds"
-                                target="_blank">
-                                <img src="/assets/img/google-play-badge.svg" alt="Google Play Store">
-                            </a>
-                        </div>
-                        <div class="col-4 offset-4 col-lg-3 offset-lg-0 px-1">
-                            <a href="https://play.google.com/store?utm_source=emea_Med&utm_medium=hasem&utm_content=090514&utm_campaign=Evergreen&pcampaignid=MKT-EG-emea-hu-all-Med-hasem-py-Evergreen-090514-1%7cONSEM_kwid_43700007034273641&gclid=CjwKCAiAxeX_BRASEiwAc1QdkcWJhnRn7ztoxu39G7zGfrXS_1ZSFYGUTvltTyBqOwT8pq7LjUDbvBoCn1sQAvD_BwE&gclsrc=aw.ds"
-                                target="_blank">
-                                <img class="w-100 mt-3" src="/assets/img/app-store-badge.svg" alt="Google Play Store">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="stores mx-auto">
+                <div class="stores mx-auto" style="width: 160px">
                     <hr class="my-4">
                     <a href="https://play.google.com/store?utm_source=emea_Med&utm_medium=hasem&utm_content=090514&utm_campaign=Evergreen&pcampaignid=MKT-EG-emea-hu-all-Med-hasem-py-Evergreen-090514-1%7cONSEM_kwid_43700007034273641&gclid=CjwKCAiAxeX_BRASEiwAc1QdkcWJhnRn7ztoxu39G7zGfrXS_1ZSFYGUTvltTyBqOwT8pq7LjUDbvBoCn1sQAvD_BwE&gclsrc=aw.ds"
                         target="_blank">
                         <img src="/assets/img/google-play-badge.svg" alt="Google Play Store">
                     </a>
-                    <a href="https://play.google.com/store?utm_source=emea_Med&utm_medium=hasem&utm_content=090514&utm_campaign=Evergreen&pcampaignid=MKT-EG-emea-hu-all-Med-hasem-py-Evergreen-090514-1%7cONSEM_kwid_43700007034273641&gclid=CjwKCAiAxeX_BRASEiwAc1QdkcWJhnRn7ztoxu39G7zGfrXS_1ZSFYGUTvltTyBqOwT8pq7LjUDbvBoCn1sQAvD_BwE&gclsrc=aw.ds"
+                    <a href="https://www.google.com/search?q=apple+store&rlz=1C1JZAP_huHU888HU888&oq=apple+st&aqs=chrome.0.0i433l2j0j69i57j0i433j0l3.4543j0j15&sourceid=chrome&ie=UTF-8"
                         target="_blank">
-                        <img class="w-100 mt-3" src="/assets/img/app-store-badge.svg" alt="Google Play Store">
+                        <img class="w-100 mt-3" src="/assets/img/app-store-badge.svg" alt="Apple Store Online">
                     </a>
-                </div> -->
+                </div>
             </div>
         </section>
 
@@ -352,9 +327,10 @@ Footer
     <!-- <script>
         jQuery(document).ready(function ($) {
             $('.nav a').click(function (e) {
-                e.preventDefault()
-                $(this).tab('show')
+                e.preventDefault();
+                $(this).tab('show');
             })
+
             $('a.scroll').on('click', function (e) {
                 var href = $(this).attr('href');
                 $('html, body').animate({
