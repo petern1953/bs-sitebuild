@@ -1,0 +1,92 @@
+@font-face {
+  font-family: titleAndMenuFont;
+  src: url(/assets/fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: buttonAndUpperMenuLinkFont;
+  src: url(/assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: paragraphAndFooterFont;
+  src: url(/assets/fonts/Mulish/Mulish-VariableFont_wght.ttf);
+}
+
+/* :root {
+    redLeftRGB: rgb(218,36,49);
+    /* firstRedLeftHex: #;
+    redRightRGB: rgb(122,67,151);
+    yellowRGB: rgb(253, 200, 68);
+    yellowHex: #fdc846;
+iconsMagentaRGB: rgb(178,50,93);
+twitterBlueRGB: rgb(29,161,243);
+facebookBlueRGB: rgb(59,89,153);
+googlePlusAndHeartRedRGB: rgb(221,76,57);
+buttonAndFooterLinkTextYellow: #fdcc52;
+} */
+
+.newAgeSection {
+  background-image: url("/assets/img/bg-pattern.png"), linear-gradient(to right, rgb(218,36,49), rgba(122,67,151));
+  background-repeat: repeat, no-repeat;
+  /* background-color: #c53535; */
+    /* background-image: url(img_flwr.gif), url(paper.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat; */
+  height: 1540px;
+}
+
+.doubleMobilImg {
+    width: 432px;
+    height: 868px;
+    background-image: url("/assets/img/demo-screen-1.jpg"), url("/assets/img/phone.png");
+    background-size: 90%, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center ;
+}
+
+.downloadSection {
+  background-color:rgb(253, 200, 68);
+  height: 480px;
+}
+
+.card__icon {
+  color: rgb(178,50,93);
+  font-size: 4rem;
+}
+
+.stopWaitingSection {
+  background-image: url("/assets/img/bg-cta.jpg");
+  height: 920px;
+}
+
+.stopWaiting__button {
+  width: 280px;
+}
+.weLoveSection {
+  background-color:rgb(253, 200, 68);
+  height: 240px;
+}
+
+.heart {
+  color:rgb(221,76,57);
+  font-size: 6rem;
+}
+
+.googlePlus__icon {
+  border-radius: 100%;
+  background-color: white;
+  color:rgb(221,76,57);
+}
+
+.facebook__icon {
+  border-radius: 100%;
+  background-color: white;
+  color:rgb(59,89,153);
+}
+
+.twitter__icon {
+  padding: 22px;
+  border-radius: 100%;
+  background-color:rgb(29,161,243);
+}
