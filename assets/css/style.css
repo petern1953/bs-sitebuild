@@ -1,16 +1,51 @@
 @font-face {
-  font-family: titleAndMenuFont;
+  font-family: Catamaran;
   src: url(/assets/fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
 }
 
 @font-face {
-  font-family: buttonAndUpperMenuLinkFont;
+  font-family: Lato;
   src: url(/assets/fonts/Lato/Lato-Regular.ttf);
 }
 
 @font-face {
-  font-family: paragraphAndFooterFont;
+  font-family: Muli;
   src: url(/assets/fonts/Mulish/Mulish-VariableFont_wght.ttf);
+}
+
+#bootstrap-overrides h1 {
+  font-family: "Catamaran", Helvetica, Arial, sans-serif;
+}
+
+#bootstrap-overrides .text-success {
+  color: red;
+}
+
+.site__title {
+color: rgb(253, 200, 68);
+}
+
+.site__title:hover {
+color: rgb(255,255,255);
+}
+
+#download {
+  top: -300px;
+  transition: top 3s;
+}
+
+
+
+site__menu {
+  font-family: "Catamaran", Helvetica, Arial, sans-serif;
+}
+
+site__button, site__upperMenuLink {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+site__footer {
+  font-family: "Muli", Helvetica, Arial, sans-serif;
 }
 
 /* :root {

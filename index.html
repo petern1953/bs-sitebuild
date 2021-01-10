@@ -12,7 +12,7 @@
     <title>Bootstrap sitebuild</title>
 </head>
 
-<body>
+<body id="bootstrap-overrides">
     <!-- Készítsd el a desktop.jpeg/mobile.jpeg képen látható responsive honlapot Bootstrap 4 segítségével!
 
 Összesen 2 nézetünk van. 
@@ -36,7 +36,7 @@ de szemre lőjük be, ne térjenek el nagyon a designon lévőtől!
 A feladatok leírását a desktop.pdf fájl tartalmazza megjegyzések formájában, de itt is olvashatod:
 
 Start Bootstrap szöveg (a bal felső sarokban): 
-    - Ha fölé visszük a kurzort, fehér lesz a betűszín.
+    - Ha fölé visszük a kurzort, fehér lesz a betűszín. ok
 
 Felső navbar:
     - Ha a menü item fölé visszük a kurzort, fehér lesz a betűszín.
@@ -91,44 +91,45 @@ Footer
     - Elég, ha ezeknek a modaloknak a title-je különbözik; a body lehet egyszerű lorem ipsum. 
     - A modal nyitását jqueryvel oldjuk meg. -->
 
-    <header>
-        <div class="container">
+    <header class="bg-transparent sticky-top">
+        <div class="container my-1">
             <div class="row">
-                <div class="col-6">
-                    <!-- Start Bootstrap szöveg (a bal felső sarokban):
-- Ha fölé visszük a kurzort, fehér lesz a betűszín. -->
-                    <h1 text-left text-md-center>Start Bootstrap</h1>
+                <!-- Start Bootstrap szöveg (a bal felső sarokban):
+                    - Ha fölé visszük a kurzort, fehér lesz a betűszín. -->
+                <!-- <h1 class="h5 text-left text-md-center site__title">Start Bootstrap</h1> -->
+                <div class="col-6 d-flex mt-2">
+                    <h1 class="h5 text-left site__title">Start Bootstrap</h1>
                 </div>
+                <!-- Felső navbar:
+                    - Ha a menü item fölé visszük a kurzort, fehér lesz a betűszín.
+                    - Nem új oldalra vezető linkek, hanem az adott oldalon belüli részhez animálódva le-/felgördül az oldal.
+                    - a "Download" > a "Discover what all the buzz is about!" részhez
+                    - a "Features" > az "Unlimited Features Unlimited Fun" részhez
+                    - a "Contact" > a "We love new friends!" részhez.
+                    - Ez az gördülés animáció 300 ms időtartamú legyen,
+                    - ennyi idő alatt felülre az adott tartalmú rész.
+                    
+                    A felső menü fixen, mindig látható felül.
+                    - Ha nem az oldal tetején vagyunk, akkor legyen a menü háttérszíne fehér, a betűk szürkék.
+                    (desktop-menu.pdf szerint) -->
                 <div class="col-6">
-                    <!-- Felső navbar:
-- Ha a menü item fölé visszük a kurzort, fehér lesz a betűszín.
-- Nem új oldalra vezető linkek, hanem az adott oldalon belüli részhez animálódva le-/felgördül az oldal.
-- a "Download" > a "Discover what all the buzz is about!" részhez
-- a "Features" > az "Unlimited Features Unlimited Fun" részhez
-- a "Contact" > a "We love new friends!" részhez.
-- Ez az gördülés animáció 300 ms időtartamú legyen,
-- ennyi idő alatt felülre az adott tartalmú rész.
-                        
-A felső menü fixen, mindig látható felül.
-- Ha nem az oldal tetején vagyunk, akkor legyen a menü háttérszíne fehér, a betűk szürkék.
-(desktop-menu.pdf szerint) -->
                     <nav
-                        class="nav navbar-expand-lg navbar-light bg-white justify-content-end justify-content-md-center">
+                        class="bg-transparent nav navbar-expand-lg navbar-light bg-white justify-content-end justify-content-md-center">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNav"
                             aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">Menu
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="topNav">
-                            <ul class="nav">
+                        <div class="collapse navbar-collapse justify-content-end small text-black" id="topNav">
+                            <ul class="nav site__menu">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#download">Download <span
+                                    <a class="nav-link" href="#download">DOWNLOAD <span
                                             class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#features">Features</a>
+                                    <a class="nav-link" href="#features">FEATURES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact</a>
+                                    <a class="nav-link" href="#contact">CONTACT</a>
                                 </li>
                             </ul>
                         </div>
