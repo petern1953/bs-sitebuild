@@ -39,7 +39,7 @@ Start Bootstrap szöveg (a bal felső sarokban):
     - Ha fölé visszük a kurzort, fehér lesz a betűszín. ok
 
 Felső navbar:
-    - Ha a menü item fölé visszük a kurzort, fehér lesz a betűszín. todo
+    - Ha a menü item fölé visszük a kurzort, fehér lesz a betűszín. ok
     - Nem új oldalra vezető linkek, hanem az adott oldalon belüli részhez animálódva le-/felgördül az oldal.
         - a "Download" > a "Discover what all the buzz is about!" részhez
         - a "Features" > az "Unlimited Features Unlimited Fun" részhez
@@ -47,7 +47,7 @@ Felső navbar:
     - Ez az gördülés animáció 300 ms időtartamú legyen,     todo
         - ennyi idő alatt  felülre az adott tartalmú rész.
 
-A felső menü fixen, mindig látható felül. 
+A felső menü fixen, mindig látható felül. ok
     - Ha nem az oldal tetején vagyunk, akkor legyen a menü háttérszíne fehér, a betűk szürkék. todo
     (desktop-menu.pdf szerint)
 
@@ -68,9 +68,9 @@ Felső rózsaszín-lila rész:
     - A jobb oldali 4-es csoportnál embed row-t használj!   todo
     - Az ikonok sima utf-8 karakterek, nem kell ikonkészletet használni. todo
 
-"Stop waiting Start Building" rész: todo
+"Stop waiting Start Building" rész: 
     - A háttéren egy áttetsző „szűrő" van.  todo
-    - Ha a gomb fölé visszük a kurzort, sárga lesz a háttérszíne és a border színe is (#fdcc52) todo
+    - Ha a gomb fölé visszük a kurzort, sárga lesz a háttérszíne és a border színe is (#fdcc52) ok
 
 "We love new friends!" rész:
     A szív:
@@ -155,7 +155,7 @@ Footer
                             <!-- <div class="col-2 offset-lg-5 text-center text-white border border-white rounded-pill mt-5 px-5 py-3"
                                 style="width: 230px;"> -->
                             <div
-                                class="col-4 offset-4 col-lg-6 offset-lg-0 text-center text-white border border-white rounded-pill mx-lg-3 mt-5 px-5 py-3">
+                                class="col-4 offset-4 col-lg-6 offset-lg-0 text-center text-white border border-white rounded-pill mx-lg-3 mt-5 px-5 py-3 site__button">
                                 <small class="pt-4 pb-1">START NOW FOR FREE!</small>
                             </div>
                         </div>
@@ -295,28 +295,64 @@ Footer
             </article>
         </section>
 
-        <section class="stopWaitingSection text-white">
-            <header>
-                <div class="jumbotron bg-transparent ml-5">
-                    <h1 class="display-4">Stop waiting.<br>
-                        Start building.</h1>
+        <section class="stopWaitingSection text-white d-flex align-items-center">
+            <!-- <header> -->
+            <div class="jumbotron bg-transparent ml-5 stopWaitingSection__inside">
+                <h1 class="display-3">Stop waiting.<br>
+                    Start building.</h1>
+                <!-- </div> -->
+                <!-- </header> -->
+                <!-- <main> -->
+                <!-- <div class="text-white text-center border border-white rounded-pill ml-5 stopWaiting__button site__button"> -->
+
+                <!-- <div class="text-white text-center border border-white rounded-pill ml-5 site__button"> -->
+                <div class="text-center text-white border border-white
+                        rounded-pill
+                        mx-lg-3 mt-5 px-5
+                    py-3 stopWaiting__button site__button">
+
+                    <small class="pt-4 pb-1">LET'S GET STARTED!</small>
                 </div>
-            </header>
-            <!-- <main> -->
-            <div class="text-white text-center border border-white rounded-pill ml-5 stopWaiting__button">
-                <p class="pt-4 pb-1">LET'S GET STARTED!</p>
             </div>
             <!-- </main> -->
         </section>
 
-        <section id="contact" class="weLoveSection">
+        <section id="contact" class="weLoveSection d-flex align-items-center justify-content-center">
             <div class="jumbotron bg-transparent text-center">
-                <h1 class="display-4">We <span class="heart pb-0">&#9829;</span> new friends!</h1>
-                <p class="text-white">
-                    <i class="fab fa-twitter fa-2x rounded-circle twitter__icon"></i>
-                    <i class="fab fa-facebook fa-3x facebook__icon"></i>
-                    <i class="fab fa-google-plus fa-3x googlePlus__icon"></i>
-                </p>
+                <h1 class="display-3">We <span class="heart pb-0 mb-n3">&#9829;</span> new friends!</h1>
+                <div class="container ">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <div class="socialMedia twitter__icon">
+                                <a href="https://twitter.com/?lang=hu" target="_blank">
+                                    <p class="text-white">
+                                        <!-- <i class="fab fa-twitter fa-2x rounded-circle twitter__icon"></i> -->
+                                        <i class="fab fa-twitter fa-2x rounded-circle"></i>
+                                    </p>
+                                </a>
+                            </div>
+
+                            <!-- <div class="socialMedia facebook__icon"> -->
+                            <div class="socialMedia mx-3">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <p class="text-white">
+                                        <!-- <i class="fab fa-facebook fa-3x facebook__icon"></i> -->
+                                        <i class="fab fa-facebook facebook__icon"></i>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="socialMedia">
+                                <a href="https://www.google.com/" target="_blank">
+                                    <p class="text-white">
+                                        <!-- <i class="fab fa-google-plus fa-3x googlePlus__icon"></i> -->
+                                        <i class="fab fa-google-plus googlePlus__icon"></i>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
