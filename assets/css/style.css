@@ -13,10 +13,14 @@
   src: url(/assets/fonts/Mulish/Mulish-VariableFont_wght.ttf);
 }
 
-.newAgeSection,
+#bootstrap-overrides {
+  margin-top: -50px;
+}
+
+/* .newAgeSection,
 #download {
   transform: translateY(-50px);
-}
+} */
 
 .card__icon {
   /* font-family: 'simple-line-icons'; */

@@ -1,0 +1,48 @@
+html,
+body {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background: white;
+}
+
+main {
+    margin-top: -50px;
+}
+
+@supports (height: 100vh) {
+    body {
+        background: linear-gradient(to right top, #ce00f2 50%, rgb(32, 209, 1) 50%);
+        background-size: 100% calc(100% - 100vh + 138px);
+        background-repeat: no-repeat;
+    }
+
+    body:before {
+        content: '';
+        position: fixed;
+        top: 139px;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+        background: rgb(255, 255, 255);
+    }
+}
+
+
+/* // Not demo related */
+
+body {
+    font-family: "Open Sans";
+    font-size: 1.25rem;
+}
+
+main,
+header {
+    padding: 10px 10%;
+    box-sizing: border-box;
+}
