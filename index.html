@@ -16,19 +16,19 @@
 <body id="bootstrap-overrides">
     <!-- Készítsd el a desktop.jpeg/mobile.jpeg képen látható responsive honlapot Bootstrap 4 segítségével!
 
-Összesen 2 nézetünk van. 
+Összesen 2 nézetünk van. ok
     - Medium breakpoint (992px) felett a desktop, 
     - alatta a mobil view érvényesüljön! 
 A designhoz használt képeket megtalálod az img mappában. 
 
 Használj egyéni betűtípusokat ************* Google fontsról le kell tölteni, 
-és css-ben egyéni betűtípusokat kell létrehozni az alábbiak szerint:
+és css-ben egyéni betűtípusokat kell létrehozni az alábbiak szerint: ok
     - a címsorok és menük betűtípusa: Catamaran, Helvetica, Arial, sans-serif
     - a gombok szövege, felső menü linkek: Lato, Helvetica, Arial, sans-serif
     - a bekezdések: Muli, Helvetica, Arial, sans-serif
     - a Footer egységesen: Muli, Helvetica, Arial, sans-serif
 
-A használni kívánt színeket mérd ki! Pontosan meg kell felelni a design színeinek! 
+A használni kívánt színeket mérd ki! Pontosan meg kell felelni a design színeinek! ok
 (color picker-t használd) 
 
 A margin, padding értékeknek, betűméreteknek, sormagasságoknak stb. nem kell pixelpontosaknak lenniük,
@@ -41,11 +41,11 @@ Start Bootstrap szöveg (a bal felső sarokban):
 
 Felső navbar:
     - Ha a menü item fölé visszük a kurzort, fehér lesz a betűszín. ok
-    - Nem új oldalra vezető linkek, hanem az adott oldalon belüli részhez animálódva le-/felgördül az oldal.
+    - Nem új oldalra vezető linkek, hanem az adott oldalon belüli részhez animálódva le-/felgördül az oldal. ok
         - a "Download" > a "Discover what all the buzz is about!" részhez
         - a "Features" > az "Unlimited Features Unlimited Fun" részhez
         - a "Contact" > a "We love new friends!" részhez.
-    - Ez az gördülés animáció 300 ms időtartamú legyen,     todo
+    - Ez az gördülés animáció 300 ms időtartamú legyen,     részben ok
         - ennyi idő alatt  felülre az adott tartalmú rész.
 
 A felső menü fixen, mindig látható felül. ok
@@ -54,8 +54,8 @@ A felső menü fixen, mindig látható felül. ok
 
 Gombok:
     - Lekerekítettek
-    - Ha föléjük visszük a kurzort, sárga lesz mind a háttér-, mind a borderszínük (#fdcc52)  todo
-    - Ez 300 ms alatt történjen meg, ne rögtön (natív css-sel oldd meg, ha tudod).  todo
+    - Ha föléjük visszük a kurzort, sárga lesz mind a háttér-, mind a borderszínük (#fdcc52)  részben ok
+    - Ez 300 ms alatt történjen meg, ne rögtön (natív css-sel oldd meg, ha tudod).  részben ok
 
 Felső rózsaszín-lila rész:
     - Ez egy linear gradient + egy kép -- repeat-elve. ok
@@ -66,11 +66,11 @@ Felső rózsaszín-lila rész:
     - Ezek olyan kép linkek, amelyek az app store és a google play oldalakra vezetnek   ok
 
 "Unlimited Features Unlimited Fun" rész:
-    - A jobb oldali 4-es csoportnál embed row-t használj!   todo
-    - Az ikonok sima utf-8 karakterek, nem kell ikonkészletet használni. todo
+    - A jobb oldali 4-es csoportnál embed row-t használj!   ok
+    - Az ikonok sima utf-8 karakterek, nem kell ikonkészletet használni. ok
 
 "Stop waiting Start Building" rész: 
-    - A háttéren egy áttetsző „szűrő" van.  todo
+    - A háttéren egy áttetsző „szűrő" van.  ok
     - Ha a gomb fölé visszük a kurzort, sárga lesz a háttérszíne és a border színe is (#fdcc52) ok
 
 "We love new friends!" rész:
@@ -80,9 +80,9 @@ Felső rózsaszín-lila rész:
         - Fontawesome-ikonok    ok
         - A háttérszínük 90%-os opacity-jű  todo
         - Ha föléjük viszem a kurzort, akkor 100%-os opacity-jűek lesznek   todo
-        - Az ikonok linkek az adott social page-re  
-        - Mindegyik ikonnak legyen tooltippje, tehát ha valamelyik fölé viszem a kurzort,   todo
-          megjelenik az adott social page neve. (facebook, twitter, google plus)    todo
+        - Az ikonok linkek az adott social page-re  ok
+        - Mindegyik ikonnak legyen tooltippje, tehát ha valamelyik fölé viszem a kurzort,   ok
+          megjelenik az adott social page neve. (facebook, twitter, google plus)    ok
 
 Footer
     Privacy, Terms, FAQ
@@ -501,11 +501,13 @@ Footer
         crossorigin="anonymous"></script>
     <script src="/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <!-- node_modules\smooth-scroll\dist\smooth-scroll.polyfills.min.js -->
-    <script>
+    <!-- <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 3000
         });
-    </script>
+    </script> -->
+    <script src="/assets/js/main.js"></script>
+
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
@@ -516,6 +518,14 @@ Footer
         $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').trigger('focus')
         })
+    </script>
+
+    <script>
+        function goToByScroll(id) {
+            $('ul#nav li a').removeClass('active'); // elements in menu
+            $(this).addClass('active');
+            $('html,body').animate({ scrollTop: $("#" + id).offset().top - 50 }, '500');
+        }
     </script>
 
     <!-- <script>
