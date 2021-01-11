@@ -13,8 +13,7 @@
   src: url(/assets/fonts/Mulish/Mulish-VariableFont_wght.ttf);
 }
 
-.newAgeSection,
-#download {
+.newAgeSection {
   transform: translateY(-50px);
 }
 
