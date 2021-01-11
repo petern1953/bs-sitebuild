@@ -137,10 +137,11 @@ buttonAndFooterLinkTextYellow: #fdcc52;
   /* width: 432px; */
   width: 360px;
   /* height: 868px; */
-  height: 700px;
+  height: 770px;
   background-image: url("/assets/img/demo-screen-1.jpg"), url("/assets/img/phone.png");
   /* background-size: 90%, cover; */
-  background-size: 90%, contain;
+  /* background-size: 90%, contain; */
+  background-size: 90%, 100%;
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
 }

@@ -200,7 +200,7 @@
 .icon-social-vkontakte,
 .icon-social-steam {
   font-family: 'simple-line-icons';
-  font-size: x-large;
+  transform: scale(2);
   /* speak: none; */
   font-style: normal;
   font-weight: normal;
@@ -966,4 +966,9 @@
 
 .icon-social-steam:before {
   content: "\e620";
+}
+
+[class*="icon-"]:before {
+  /* transform: scale(2); */
+  font-size: 100px;
 }
