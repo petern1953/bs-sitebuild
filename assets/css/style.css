@@ -49,7 +49,16 @@
   font-weight: 100;
 }
 
+#bootstrap-overrides .featuresSection p {
+  font-size: 1.2rem;
+}
+
 #bootstrap-overrides h1 {
+  font-family: "Catamaran", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+#bootstrap-overrides h2 {
   font-family: "Catamaran", Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
