@@ -60,7 +60,7 @@
 }
 
 #bootstrap-overrides .nav-link:hover {
-  font-family: "Catamaran", Helvetica, Arial, sans-serif;
+  /* font-family: "Catamaran", Helvetica, Arial, sans-serif; */
   color:rgb(255,255,255);
 }
 
@@ -163,8 +163,6 @@ buttonAndFooterLinkTextYellow: #fdcc52;
   position: relative;
 }
 
-
-
 /* #bootstrap-overrides .stopWaitingSection h1 {
   color: white;
 } */
@@ -230,5 +228,30 @@ border: 1px solid rgb(59,89,153);
 
 .stores {
   width: 240px;
+}
+
+/* .siteFooter__nav, .siteFooter__nav p { */
+.siteFooter__nav {
+  font-family: "Muli", Helvetica, Arial, sans-serif;
+  font-size: .8rem;
+  background-color: #222;
+}
+
+#bootstrap-overrides .siteFooter__nav p {
+  font-family: "Muli", Helvetica, Arial, sans-serif;
+  font-size: .8rem;
+  color: #666;
+}
+
+#bootstrap-overrides .siteFooter__nav a {
+  font-family: "Muli", Helvetica, Arial, sans-serif;
+  font-size: .8rem;
+    color: #666;
+}
+
+#bootstrap-overrides .siteFooter__nav a:hover {
+  font-family: "Muli", Helvetica, Arial, sans-serif;
+  font-size: .8rem;
+    color: #fdcc52;
 }
 
